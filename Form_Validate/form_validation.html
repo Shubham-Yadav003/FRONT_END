@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            padding: 10px 50px;
+        }
+
+        .formdesign {
+            font-size: 20px;
+
+        }
+
+        .formdesign input {
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 14px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .formerror {
+            color: red;
+        }
+
+        .but {
+            border-radius: 9px;
+            width: 100px;
+            height: 50px;
+            font-size: 25px;
+            margin: 22px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Welcome to best form on Internet</h1>
+    <form action="/myaction.php" name="myform" onsubmit="return validateForm()" method="post">
+    <div class="formdesign" id="name">
+        Name: <input type="text" name="fname" placeholder="Enter name" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email:<input type="email" name="femail" placeholder="Enter email" required><b><span class="formerror"></span></b>
+
+        </div>
+
+        <div class="formdesign" id="phone">
+            phone:<input type="phone" name="fphone"  placeholder="Enter Phone Number" required><b><span class="formerror"></span></b>
+
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password:<input type="password" name="fpass" placeholder="Password" required><b><span class="formerror"></span></b>
+
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password:<input type="password" name="fcpass" placeholder="Confirm Password" required><b><span class="formerror"></span></b>
+
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+
+
+    </form>
+<script>
+
+function clearErrors(){
+
+errors = document.getElementsByClassName('formerror');
+for(let item of errors)
+{
+    item.innerHTML = "";
+}
+
+
+}
+
+    function seterror(id,error){
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML=error;
+
+    }
+    function validateForm(){
+        var returnval=true;
+        clearErrors();
+        var name=document.forms['myform']["fname"].value;
+        if(name.length<5){
+            seterror("name","Length of name is too short");
+            returnval=false; 
+        }
+         var email=document.forms['myform']["femail"].value;
+         if(email.length>21){
+            seterror("email","*Email is too long");
+            returnval=false;
+         }
+
+         var phone=document.forms['myform']["fphone"].value;
+         if(phone.length!=10){
+            seterror("phone","*Phone should of 10 digits!");
+            returnval=false;
+         }
+
+         var password=document.forms['myform']["fpass"].value;
+         if(password.length<6){
+            seterror("pass","*Password should be atleast 6 digits!");
+            returnval=false;
+         }
+
+         var cpassword=document.forms['myform']["fcpass"].value;
+         if(cpassword!=password){
+            seterror("cpass", "*Passwords do not match!");
+            returnval=false;              
+         }
+
+         return returnval;
+    }
+
+</script>
+</body>
+</html>
