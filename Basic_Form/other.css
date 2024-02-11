@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.apply{
+   border: solid aqua;
+   background-color: burlywood;
+   font-size: large;
+   border-radius: 5px;
+}
+.form_control{
+/*margin:5px;*/
+padding: 20px;
+border-radius: 0px;
+}
+.form_control label{
+  border-radius: 5px;
+}
+.input{
+    
+}
