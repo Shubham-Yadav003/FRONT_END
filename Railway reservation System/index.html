@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <heading>
+      <!-- Logo -->
+      <img src="img/logo.jpg" alt="logo" class="logo" />
+      <!-- Ṇavigation Bar -->
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="meals.html">Meals</a>
+        <a href="#holidays">Holiday Packages</a>
+        <a href="services.html">Service at Stations</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </heading>
+    <main>
+      <!-- Ticket Booking Form with bg Img -->
+      <section class="form-img">
+        <!-- Text on bg img -->
+        <div class="railways-text">INDIAN RAILWAYS</div>
+        <div class="railways-text-2">Safety | Security | Punctuality</div>
+        <!-- form -->
+        <form action="https://www.irctc.co.in/nget/train-search" class="form1">
+          <div class="item form-text">Book Ticket</div>
+          <div class="item">From: <input type="text" id="from" /></div>
+          <div class="item">To: &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="to" /></div>
+          <div class="item">
+            Category:
+            <select id="category" name="category">
+              <option value="General">General</option>
+              <option value="Ladies">Ladies</option>
+              <option value="Senior Citizen">Senior Citizen</option>
+              <option value="Person with Disability">
+                Person with Disability
+              </option>
+              <option value="Tatkal">Tatkal</option>
+            </select>
+          </div>
+          <div class="item">
+            Date of Journey: <input type="date" id="date" />
+          </div>
+          <br />
+
+          <div class="item">
+            <input type="checkbox" name="checkdate" id="checkdate" />
+            <label for="checkdate">Flexible with Date</label>
+          </div>
+          <br />
+          <div class="item">
+            <input type="checkbox" name="checkberth" id="checkberth" />
+            <label for="checkberth">Train with Available Berth</label>
+          </div>
+
+          <input type="submit" value="Search" class="search-btn" />
+        </form>
+      </section>
+      <!-- Holidays Section -->
+      <section class="holidays" id="holidays">
+        <h2 class="holidays-text">HOLIDAYS</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="img/img3.jpg" alt="Avatar" style="width: 100%" />
+              <h3>International Packages</h3>
+              <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="img/img2.jpg" alt="Avatar" style="width: 100%" />
+
+              <h3>Domestic Packages</h3>
+              <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="img/img1.jpg" alt="Avatar" style="width: 100%" />
+
+              <h3>Rail Tour Packages</h3>
+              <p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

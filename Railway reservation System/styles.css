@@ -1,0 +1,180 @@
+
+/* Navbar */
+.navbar {
+  width: 75%;
+  padding:40px;
+  background-color: #086096;
+  position: absolute;
+  display: inline-block;
+}
+.navbar a {
+  padding: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.navbar a:hover {
+  background-color: rgb(7, 169, 31);
+}
+
+/* logo */
+.logo {
+  display: inline-block;
+  width: 103px;
+  padding-right: 8%;
+  padding-left: 7%;
+  background-color: #086096;
+
+}
+
+/* background image */
+.form-img {
+  background-image: url("img/img2.jpg");
+  box-sizing: border-box;
+  min-height: 550px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 200px;
+
+}
+/* Background image text */
+.railways-text {
+  position: absolute;
+  bottom: 70%;
+  right: 23%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.railways-text-2 {
+  position: absolute;
+  bottom: 60%;
+  right: 23%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+/* ticket form */
+.form1 {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 20%;
+  font-size: 20px;
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+
+  left: 0;
+}
+
+input[text] , input[date], select {
+  width: 100%;
+}
+.item {
+  margin-bottom: 20px;
+
+}
+/* Form text heading */
+.form-text {
+  text-align: center;
+  font-family:monospace;
+  font-size: 25px;
+  color: crimson;
+  font-weight: bolder;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #086096;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.search-btn:hover {
+  opacity: 1;
+}
+
+
+
+/* Holiday Cards */
+.holidays {
+  box-sizing: border-box;
+  background-color: darkgray;
+}
+.holidays-text , .services-text, .meals-text{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: justify;
+  background-color: #f1f1f1;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.row {
+  
+  margin:0 -5px;
+  margin-left: 50px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card img {
+  height: 300px;
+}
+
+.service2{
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.service1 {
+  
+  margin:0 -5px;
+  margin-left: 50px;
+
+}
+
+/* Clear floats after the columns */
+.service1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service-text {
+  text-align: center;
+}
+
+.form2 {
+  text-align:justify;
+}
