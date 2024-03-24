@@ -1,7 +1,7 @@
 # Solar-Power-Calculator
 In this repo. I make a solar power website home page , gallery &amp; solar power calculator by the use of html, css, javascript.
 
-![](https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/home.png)
+![](https://github.com/Shubham-Yadav003/FRONT_END/blob/main/Parallex_Webpage/img/parallex_1.png)
 <hr>
 <img src="https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/gallery.png" alt="">
 <hr>
