@@ -3,7 +3,7 @@ In this repo. I make a solar power website home page , gallery &amp; solar power
 
 ![](https://github.com/Shubham-Yadav003/FRONT_END/new/main/Basic_Form)
 <hr>
-<img src="https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/gallery.png" alt="">
+<img src="https://github.com/Shubham-Yadav003/FRONT_END/blob/main/Basic_Form/pics/img1.jpg" alt="">
 <hr>
 <img src="https://github.com/VinayThakur04/Solar-Power-Calculator/blob/main/calculator.png" alt="">
 <hr>
