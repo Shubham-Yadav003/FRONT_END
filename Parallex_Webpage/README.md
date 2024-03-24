@@ -1,5 +1,5 @@
-# Solar-Power-Calculator
-In this repo. I make a solar power website home page , gallery &amp; solar power calculator by the use of html, css, javascript.
+#Parallax WebPage
+In this folder I have made a parrallax webpage that using html ans css.
 
 ![](https://github.com/Shubham-Yadav003/FRONT_END/blob/main/Parallex_Webpage/img/parallex_1.png)
 <hr>
