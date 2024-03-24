@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HEY BABS !!</title>
+</head>
+<body>
+    <section>
+        <h1><marquee scrollamount="18"> WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</marquee></h1>
+        <div class="center">
+            <div class="center_bx">
+                <br>
+                <label>APNA NAME LIKH</label><br>
+                <input  type="text" name="" id="nameid" placeholder="YOUR NAME">
+            </div>
+            <div class="center_img">
+                <img src="pics/new.jpg" width="200" height="200" class="imgchange" >
+
+            </div>
+            <button> BUTTON CLICK KAR</button>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                const name=$('#nameid').val();
+                $('.imgchange').attr('src',`https://joesch.moe/api/v1/${name}`);
+
+              
+            });
+        });
+    </script>
+    
+</body>
+</html>
